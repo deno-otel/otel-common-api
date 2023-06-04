@@ -4,7 +4,7 @@ import { Attribute } from "./attribute.ts";
  * A collection of attributes. This implementation ensures the uniqueness of
  * Attribute keys by overwriting any pre-existing Attribute if there is a a duplicate key.
  */
-export abstract class AttributeCollection {
+export abstract class Attributes {
   private attributes: Map<Attribute["key"], Attribute> = new Map();
 
   constructor() {}
